@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Divyansh Jain — Aspiring AI Engineer, Full Stack Developer & C++ DSA Enthusiast. B.Tech CSE student passionate about AI, ML and building impactful software." />
+  <meta name="keywords" content="Divyansh Jain, AI Engineer, Full Stack Developer, C++, DSA, Portfolio" />
+  <meta name="author" content="Divyansh Jain" />
+  <title>Divyansh Jain — AI Engineer & Developer</title>
+
+  <!-- Google Fonts: Playfair Display (editorial serif) + Inter (clean sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== SCROLL TO TOP ========== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo / Name mark -->
+      <a href="#home" class="nav-logo" aria-label="Divyansh Jain Home">
+        <span class="logo-symbol">◆</span> Divyansh Jain
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home"     class="nav-link active" data-section="home">Home</a></li>
+          <li><a href="#about"    class="nav-link"        data-section="about">About</a></li>
+          <li><a href="#skills"   class="nav-link"        data-section="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link"        data-section="projects">Projects</a></li>
+          <li><a href="#contact"  class="nav-link"        data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA + Hamburger -->
+      <div class="nav-right">
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+
+        <!-- LEFT: Text -->
+        <div class="hero-text">
+          <p class="hero-eyebrow">
+            <span class="eyebrow-line"></span>
+            B.Tech CSE · 3rd Year · AI Enthusiast
+          </p>
+
+          <h1 class="hero-heading">
+            <span class="hero-line">Divyansh</span>
+            <span class="hero-line hero-line-italic">Jain<span class="hero-dot">.</span></span>
+          </h1>
+
+          <p class="hero-sub">
+            <span class="typing-prefix">—&nbsp;</span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </p>
+
+          <p class="hero-desc">
+            I am a third-year B.Tech Computer Science Engineering student passionate about Artificial Intelligence, Full Stack Development, Data Science, and solving real-world problems through technology.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-dark" id="viewProjectsBtn">
+              View Projects
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline" id="contactMeBtn">Contact Me</a>
+          </div>
+
+          <!-- Stats row -->
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong class="hs-num" data-target="5">0</strong><span class="hs-plus">+</span>
+              <span class="hs-label">Projects</span>
+            </div>
+            <div class="hs-divider" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <strong class="hs-num" data-target="10">0</strong><span class="hs-plus">+</span>
+              <span class="hs-label">Technologies</span>
+            </div>
+            <div class="hs-divider" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <strong class="hs-num" data-target="200">0</strong><span class="hs-plus">+</span>
+              <span class="hs-label">Problems Solved</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Image Collage -->
+        <div class="hero-collage" aria-label="Portfolio collage">
+          <div class="collage-main">
+            <img src="hero_ai.png" alt="AI Neural Network Visualization" class="collage-img" />
+            <div class="collage-tag">AI &amp; Machine Learning</div>
+          </div>
+          <div class="collage-secondary">
+            <img src="hero_code.png" alt="Python Code Editor" class="collage-img" />
+            <div class="collage-tag">Full Stack Dev</div>
+          </div>
+          <!-- Decorative floating elements -->
+          <div class="collage-badge" aria-hidden="true">
+            <span class="cb-emoji">🎓</span>
+            <span>CSE Student</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="scroll-hint" aria-hidden="true">
+        <div class="sh-line"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+
+        <div class="about-layout">
+
+          <!-- Left: Section label + image -->
+          <div class="about-left reveal">
+            <p class="section-label">About Me</p>
+            <div class="about-portrait">
+              <div class="portrait-initials">
+
+                <img src="Images/WhatsApp Image 2026-07-04 at 4.11.04 PM.jpeg" alt="Divyansh Jain">
+              </div>
+              <div class="portrait-decor" aria-hidden="true"></div>
+            </div>
+            <div class="about-quick-info">
+              <div class="qi-item">
+                <span class="qi-label">Name</span>
+                <span class="qi-value">Divyansh Jain</span>
+              </div>
+              <div class="qi-item">
+                <span class="qi-label">Degree</span>
+                <span class="qi-value">B.Tech CSE</span>
+              </div>
+              <div class="qi-item">
+                <span class="qi-label">Year</span>
+                <span class="qi-value">3rd Year</span>
+              </div>
+              <div class="qi-item">
+                <span class="qi-label">Status</span>
+                <span class="qi-value qi-available">Open to Internships</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Text content -->
+          <div class="about-right reveal" data-delay="100">
+            <h2 class="section-heading">
+              Crafting<br/>
+              <em>intelligent</em> software<br/>
+              with purpose.
+            </h2>
+
+            <p class="about-para">
+              I enjoy learning new technologies, solving challenging problems, and building intelligent software. My interests include <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, <strong>C++</strong>, <strong>Data Structures &amp; Algorithms</strong>, <strong>Full Stack Development</strong>, and <strong>Data Science</strong>.
+            </p>
+
+            <p class="about-goal-text">
+              <span class="agt-bar" aria-hidden="true"></span>
+              Career Goal: Become an AI Engineer &amp; Full Stack Developer while building impactful software solutions.
+            </p>
+
+            <div class="about-interests">
+              <span class="interest-tag">Artificial Intelligence</span>
+              <span class="interest-tag">Machine Learning</span>
+              <span class="interest-tag">C++ &amp; DSA</span>
+              <span class="interest-tag">Full Stack Dev</span>
+              <span class="interest-tag">Data Science</span>
+              <span class="interest-tag">Computer Vision</span>
+            </div>
+
+            <a href="#contact" class="btn btn-dark">Let's Talk</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+
+        <div class="skills-header">
+          <p class="section-label reveal">Technical Skills</p>
+          <h2 class="section-heading reveal" data-delay="50">
+            Tools &amp; <em>Technologies</em><br/>I work with.
+          </h2>
+        </div>
+
+        <div class="skills-layout">
+
+          <!-- Skill List -->
+          <div class="skills-list">
+
+            <div class="skill-row reveal" data-delay="0">
+              <div class="sr-info">
+                <span class="sr-name">C++</span>
+                <span class="sr-level">Advanced</span>
+              </div>
+              <div class="sr-track">
+                <div class="sr-fill" data-width="88" style="--accent: #7c3aed;"></div>
+              </div>
+              <span class="sr-pct">88%</span>
+            </div>
+
+            <div class="skill-row reveal" data-delay="60">
+              <div class="sr-info">
+                <span class="sr-name">Python</span>
+                <span class="sr-level">Advanced</span>
+              </div>
+              <div class="sr-track">
+                <div class="sr-fill" data-width="82" style="--accent: #059669;"></div>
+              </div>
+              <span class="sr-pct">82%</span>
+            </div>
+
+            <div class="skill-row reveal" data-delay="120">
+              <div class="sr-info">
+                <span class="sr-name">HTML5 &amp; CSS3</span>
+                <span class="sr-level">Expert</span>
+              </div>
+              <div class="sr-track">
+                <div class="sr-fill" data-width="90" style="--accent: #ea580c;"></div>
+              </div>
+              <span class="sr-pct">90%</span>
+            </div>
+
+            <div class="skill-row reveal" data-delay="180">
+              <div class="sr-info">
+                <span class="sr-name">JavaScript</span>
+                <span class="sr-level">Intermediate</span>
+              </div>
+              <div class="sr-track">
+                <div class="sr-fill" data-width="80" style="--accent: #ca8a04;"></div>
+              </div>
+              <span class="sr-pct">80%</span>
+            </div>
+
+            <div class="skill-row reveal" data-delay="240">
+              <div class="sr-info">
+                <span class="sr-name">Data Structures &amp; Algorithms</span>
+                <span class="sr-level">Advanced</span>
+              </div>
+              <div class="sr-track">
+                <div class="sr-fill" data-width="85" style="--accent: #0284c7;"></div>
+              </div>
+              <span class="sr-pct">85%</span>
+            </div>
+
+            <div class="skill-row reveal" data-delay="300">
+              <div class="sr-info">
+                <span class="sr-name">AI / Machine Learning</span>
+                <span class="sr-level">Intermediate</span>
+              </div>
+              <div class="sr-track">
+                <div class="sr-fill" data-width="78" style="--accent: #7c3aed;"></div>
+              </div>
+              <span class="sr-pct">78%</span>
+            </div>
+
+            <div class="skill-row reveal" data-delay="360">
+              <div class="sr-info">
+                <span class="sr-name">DBMS</span>
+                <span class="sr-level">Intermediate</span>
+              </div>
+              <div class="sr-track">
+                <div class="sr-fill" data-width="75" style="--accent: #db2777;"></div>
+              </div>
+              <span class="sr-pct">75%</span>
+            </div>
+
+            <div class="skill-row reveal" data-delay="420">
+              <div class="sr-info">
+                <span class="sr-name">Git &amp; GitHub</span>
+                <span class="sr-level">Advanced</span>
+              </div>
+              <div class="sr-track">
+                <div class="sr-fill" data-width="83" style="--accent: #374151;"></div>
+              </div>
+              <span class="sr-pct">83%</span>
+            </div>
+
+            <div class="skill-row reveal" data-delay="480">
+              <div class="sr-info">
+                <span class="sr-name">Data Science</span>
+                <span class="sr-level">Intermediate</span>
+              </div>
+              <div class="sr-track">
+                <div class="sr-fill" data-width="72" style="--accent: #06b6d4;"></div>
+              </div>
+              <span class="sr-pct">72%</span>
+            </div>
+
+            <div class="skill-row reveal" data-delay="540">
+              <div class="sr-info">
+                <span class="sr-name">Responsive Web Design</span>
+                <span class="sr-level">Expert</span>
+              </div>
+              <div class="sr-track">
+                <div class="sr-fill" data-width="89" style="--accent: #10b981;"></div>
+              </div>
+              <span class="sr-pct">89%</span>
+            </div>
+
+          </div>
+
+          <!-- Tech Badges Panel -->
+          <div class="skills-side reveal" data-delay="100">
+            <p class="skills-side-title">Tech Stack</p>
+            <div class="tech-grid">
+              <div class="tech-item">
+                <span class="ti-icon" style="background:#fff3e0; color:#ea580c;">C++</span>
+                <span>C++</span>
+              </div>
+              <div class="tech-item">
+                <span class="ti-icon" style="background:#e8f5e9; color:#2e7d32;">Py</span>
+                <span>Python</span>
+              </div>
+              <div class="tech-item">
+                <span class="ti-icon" style="background:#e3f2fd; color:#1565c0;">JS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="tech-item">
+                <span class="ti-icon" style="background:#f3e8ff; color:#7c3aed;">AI</span>
+                <span>AI / ML</span>
+              </div>
+              <div class="tech-item">
+                <span class="ti-icon" style="background:#e0f2fe; color:#0369a1;">CV</span>
+                <span>OpenCV</span>
+              </div>
+              <div class="tech-item">
+                <span class="ti-icon" style="background:#fce7f3; color:#9d174d;">DB</span>
+                <span>DBMS</span>
+              </div>
+              <div class="tech-item">
+                <span class="ti-icon" style="background:#f1f5f9; color:#374151;">Git</span>
+                <span>GitHub</span>
+              </div>
+              <div class="tech-item">
+                <span class="ti-icon" style="background:#ecfdf5; color:#065f46;">DS</span>
+                <span>Data Sci</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+
+        <div class="projects-header">
+          <p class="section-label reveal">Featured Work</p>
+          <h2 class="section-heading reveal" data-delay="50">
+            Projects that <em>matter.</em>
+          </h2>
+        </div>
+
+        <div class="project-card reveal">
+          <!-- Image side -->
+          <div class="pc-image">
+            <img src="project_gesture.png" alt="Hand Gesture Control System screenshot" class="pc-img" />
+            <div class="pc-number">01</div>
+          </div>
+
+          <!-- Content side -->
+          <div class="pc-content">
+            <div class="pc-tags-top">
+              <span class="pc-category">AI &amp; Computer Vision</span>
+            </div>
+            <h3 class="pc-title">Hand Gesture<br/>Control System</h3>
+            <p class="pc-desc">
+              Developed an AI-powered computer control system using Python, OpenCV, MediaPipe, and PyAutoGUI. The application tracks hand landmarks in real time and enables cursor movement, clicking, gesture recognition, and touchless interaction using computer vision.
+            </p>
+            <div class="pc-tech">
+              <span class="pct-badge">Python</span>
+              <span class="pct-badge">OpenCV</span>
+              <span class="pct-badge">MediaPipe</span>
+              <span class="pct-badge">PyAutoGUI</span>
+            </div>
+            <div class="pc-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-dark" id="githubProjectBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.648.5.5 5.648.5 12c0 5.09 3.292 9.4 7.862 10.924.575.105.786-.25.786-.555 0-.274-.01-1-.015-1.964-3.2.695-3.875-1.544-3.875-1.544-.523-1.328-1.277-1.682-1.277-1.682-1.044-.714.08-.7.08-.7 1.154.082 1.762 1.185 1.762 1.185 1.026 1.758 2.692 1.25 3.35.956.104-.743.4-1.25.728-1.537-2.554-.29-5.24-1.277-5.24-5.683 0-1.256.449-2.283 1.184-3.087-.118-.29-.513-1.462.113-3.047 0 0 .965-.31 3.16 1.178A10.993 10.993 0 0 1 12 6.626c.976.005 1.96.132 2.878.387 2.194-1.488 3.156-1.178 3.156-1.178.628 1.585.233 2.757.115 3.047.737.804 1.183 1.831 1.183 3.087 0 4.416-2.69 5.39-5.252 5.674.413.357.78 1.06.78 2.135 0 1.543-.014 2.786-.014 3.165 0 .308.208.666.79.553C20.71 21.396 24 17.088 24 12 24 5.648 18.352.5 12 .5z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn-outline" id="liveDemoBtn">
+                Live Demo
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS ========== -->
+    <section class="achievements section" id="achievements">
+      <div class="container">
+
+        <div class="ach-header">
+          <p class="section-label reveal">By the Numbers</p>
+          <h2 class="section-heading reveal" data-delay="50">What I've <em>accomplished.</em></h2>
+        </div>
+
+        <div class="ach-grid">
+
+          <div class="ach-card reveal" data-delay="0">
+            <div class="ac-top">
+              <span class="ac-emoji">🚀</span>
+              <div class="ac-num-wrap">
+                <span class="ac-num" data-target="5">0</span>
+                <span class="ac-suffix">+</span>
+              </div>
+            </div>
+            <h3 class="ac-title">Projects Built</h3>
+            <p class="ac-desc">Real-world AI &amp; Web Projects</p>
+          </div>
+
+          <div class="ach-card reveal" data-delay="100">
+            <div class="ac-top">
+              <span class="ac-emoji">📚</span>
+              <div class="ac-num-wrap">
+                <span class="ac-num" data-target="10">0</span>
+                <span class="ac-suffix">+</span>
+              </div>
+            </div>
+            <h3 class="ac-title">Technologies</h3>
+            <p class="ac-desc">Always expanding my stack</p>
+          </div>
+
+          <div class="ach-card reveal" data-delay="200">
+            <div class="ac-top">
+              <span class="ac-emoji">💡</span>
+              <div class="ac-num-wrap">
+                <span class="ac-num" data-target="200">0</span>
+                <span class="ac-suffix">+</span>
+              </div>
+            </div>
+            <h3 class="ac-title">Problems Solved</h3>
+            <p class="ac-desc">DSA &amp; Competitive Coding</p>
+          </div>
+
+          <div class="ach-card reveal" data-delay="300">
+            <div class="ac-top">
+              <span class="ac-emoji">🎯</span>
+              <div class="ac-num-wrap">
+                <span class="ac-num" data-target="365">0</span>
+                <span class="ac-suffix"></span>
+              </div>
+            </div>
+            <h3 class="ac-title">Days of Learning</h3>
+            <p class="ac-desc">Continuous self-improvement</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+
+        <div class="contact-layout">
+
+          <!-- Left: Heading + info -->
+          <div class="contact-left reveal">
+            <p class="section-label">Get In Touch</p>
+            <h2 class="section-heading">
+              Let's build<br/>
+              something <em>great</em><br/>
+              together.
+            </h2>
+
+            <p class="contact-intro">
+              Whether you have a project idea, an internship opportunity, or just want to connect — my inbox is always open!
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:jaindivyanshh721@gmail.com" class="cl-item">
+                <div class="cl-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div class="cl-text">
+                  <span class="cl-label">Email</span>
+                  <span class="cl-value">jaindivyanshh721@gmail.com</span>
+                </div>
+                <svg class="cl-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/divyansh-jainn " target="_blank" rel="noopener noreferrer" class="cl-item">
+                <div class="cl-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.026-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.102v1.561h.044c.431-.817 1.484-1.678 3.054-1.678 3.268 0 3.871 2.149 3.871 4.944v6.625zM5.337 7.433a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm1.551 13.019H3.785V9h3.103v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
+                <div class="cl-text">
+                  <span class="cl-label">LinkedIn</span>
+                  <span class="cl-value">https://www.linkedin.com/in/divyansh-jainn</span>
+                </div>
+                <svg class="cl-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+
+              <a href="https://github.com/Divyansh-6" target="_blank" rel="noopener noreferrer" class="cl-item">
+                <div class="cl-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.648.5.5 5.648.5 12c0 5.09 3.292 9.4 7.862 10.924.575.105.786-.25.786-.555 0-.274-.01-1-.015-1.964-3.2.695-3.875-1.544-3.875-1.544-.523-1.328-1.277-1.682-1.277-1.682-1.044-.714.08-.7.08-.7 1.154.082 1.762 1.185 1.762 1.185 1.026 1.758 2.692 1.25 3.35.956.104-.743.4-1.25.728-1.537-2.554-.29-5.24-1.277-5.24-5.683 0-1.256.449-2.283 1.184-3.087-.118-.29-.513-1.462.113-3.047 0 0 .965-.31 3.16 1.178A10.993 10.993 0 0 1 12 6.626c.976.005 1.96.132 2.878.387 2.194-1.488 3.156-1.178 3.156-1.178.628 1.585.233 2.757.115 3.047.737.804 1.183 1.831 1.183 3.087 0 4.416-2.69 5.39-5.252 5.674.413.357.78 1.06.78 2.135 0 1.543-.014 2.786-.014 3.165 0 .308.208.666.79.553C20.71 21.396 24 17.088 24 12 24 5.648 18.352.5 12 .5z"/></svg>
+                </div>
+                <div class="cl-text">
+                  <span class="cl-label">GitHub</span>
+                  <span class="cl-value">https://github.com/Divyansh-6</span>
+                </div>
+                <svg class="cl-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+
+              <div class="cl-item no-link">
+                <div class="cl-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="cl-text">
+                  <span class="cl-label">Location</span>
+                  <span class="cl-value">India 🇮🇳</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact-right reveal" data-delay="100">
+            <form class="contact-form" id="contactForm" novalidate>
+              <h3 class="form-heading">Send a Message</h3>
+
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-dark btn-full" id="submitBtn">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+
+              <div class="form-status" id="formStatus" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-name">Divyansh Jain</span>
+          <p class="footer-tagline">AI Engineer &amp; Full Stack Developer</p>
+        </div>
+        <p class="footer-copy">© 2026 · Built with HTML, CSS &amp; JavaScript</p>
+        <div class="footer-socials">
+          <a href="https://github.com"   target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.648.5.5 5.648.5 12c0 5.09 3.292 9.4 7.862 10.924.575.105.786-.25.786-.555 0-.274-.01-1-.015-1.964-3.2.695-3.875-1.544-3.875-1.544-.523-1.328-1.277-1.682-1.277-1.682-1.044-.714.08-.7.08-.7 1.154.082 1.762 1.185 1.762 1.185 1.026 1.758 2.692 1.25 3.35.956.104-.743.4-1.25.728-1.537-2.554-.29-5.24-1.277-5.24-5.683 0-1.256.449-2.283 1.184-3.087-.118-.29-.513-1.462.113-3.047 0 0 .965-.31 3.16 1.178A10.993 10.993 0 0 1 12 6.626c.976.005 1.96.132 2.878.387 2.194-1.488 3.156-1.178 3.156-1.178.628 1.585.233 2.757.115 3.047.737.804 1.183 1.831 1.183 3.087 0 4.416-2.69 5.39-5.252 5.674.413.357.78 1.06.78 2.135 0 1.543-.014 2.786-.014 3.165 0 .308.208.666.79.553C20.71 21.396 24 17.088 24 12 24 5.648 18.352.5 12 .5z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.026-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.102v1.561h.044c.431-.817 1.484-1.678 3.054-1.678 3.268 0 3.871 2.149 3.871 4.944v6.625zM5.337 7.433a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm1.551 13.019H3.785V9h3.103v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:divyansh@example.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
